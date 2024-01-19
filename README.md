@@ -25,7 +25,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend Mentor](todo)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/skilled-elearning-landing-page-dfkj851m_9)
 - Live Site URL: [Github Pages](https://jumiranda5.github.io/fm-newbie-skilled-elearning-landing-page/)
 
 ## Author
