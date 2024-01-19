@@ -50,6 +50,7 @@ srcMobile.srcset = `${HeroMobileWebp} 1x, ${HeroMobilePng} 1x, ${HeroMobileWebp2
 
 img.src = HeroMobilePng;
 img.classList.add('hero-img');
+img.alt = "";
 
 picture.appendChild(srcDesk);
 picture.appendChild(srcTablet);
