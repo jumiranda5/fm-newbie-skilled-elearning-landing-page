@@ -1,0 +1,37 @@
+.courses {
+    --card-padding: 1.75rem;
+    --icon-size: 3.5rem;
+
+    background: var(--grad-blue-light);
+    padding-bottom: 2.5rem;
+}
+
+.courses-title-container,
+.course-card {
+    padding: 1.75rem 1.75rem 2rem;
+    border-radius: .625rem;
+}
+
+.courses-title-container {
+    background: var(--grad-pink);
+    color: var(--clr-white);
+}
+
+.course-card {
+    margin-top: 2.5rem;
+    padding-top: calc(var(--card-padding) + calc(var(--icon-size) / 2));
+    background-color: var(--clr-white);
+    position: relative;
+}
+
+.course-icon {
+    width: var(--icon-size);
+    aspect-ratio: 1 / 1;
+    position: absolute;
+    top: calc((var(--icon-size) / 2) * -1);
+    inset-inline-start: var(--card-padding);
+}
+
+.course-description {
+    margin: 1rem 0 1.5rem;
+} 

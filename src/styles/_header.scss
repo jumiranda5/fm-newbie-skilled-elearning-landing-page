@@ -1,0 +1,12 @@
+header {
+    display: grid;
+    align-items: center;
+    height: var(--header-hight);
+}
+
+header .container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}

@@ -1,0 +1,79 @@
+@font-face {
+    font-family: 'PlusJakartaSans';
+    font-display: swap;
+    font-weight: 100 900;
+    src: url(../assets/fonts/PlusJakartaSans-VariableFont_wght.ttf) 
+         format('truetype');
+}
+
+:root {
+    --clr-primary: #13183F;
+    --clr-primary-light: #666CA3;
+    --clr-secondary: #83869A;
+    --clr-accent: #F74780;
+    --clr-accent-light: #FFA7C3;
+    --clr-white: #FFFFFF;
+
+    --grad-pink: linear-gradient(#FF6F48, #F02AA6);
+    --grad-purple: linear-gradient(#4851FF, #F02AA6);
+    --grad-pink-light: linear-gradient(rgba(255, 112, 72, 0.5), rgba(240, 42, 167, 0.5));
+    --grad-purple-light: linear-gradient(rgba(72, 81, 255, 0.5), rgba(240, 42, 167, 0.5));
+    --grad-blue-light: linear-gradient(#FFFFFF, #F0F1FF);
+
+    --font: PlusJakartaSans, sans-serif;
+
+    --header-hight: 5rem;
+}
+
+body {
+    font-family: var(--font);
+    color: var(--clr-primary);
+}
+
+// Links
+
+.link-start {
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 700;
+    transition: .3s;
+}
+
+.link-start[data-type="button"] {
+    color: var(--clr-white);
+    background-color: var(--clr-primary);
+    line-height: 3rem;
+    padding: 0 1.5em;
+    border-radius: 100vw;
+}
+
+.link-start[data-type="button"]:hover,
+.link-start[data-type="button"]:focus {
+    background-color: var(--clr-primary-light);
+}
+
+.link-start[data-type="link"] {
+    color: var(--clr-accent);
+    font-size: 1.125rem;
+}
+
+.link-start[data-type="link"]:hover,
+.link-start[data-type="link"]:focus {
+    color: var(--clr-accent-light);
+}
+
+
+// Logo
+
+.logo {
+    width: 5.5rem;
+}
+
+
+// Container
+
+.container {
+    width: 92%;
+    margin: 0 auto;
+    //border: 1px solid red;
+}
