@@ -22,7 +22,13 @@
 
     --font: PlusJakartaSans, sans-serif;
 
-    --header-hight: 5rem;
+    --header-height: 5rem;
+}
+
+@media (min-width: 48em) {
+    :root {
+        --header-height: 6rem;
+    }
 }
 
 body {
@@ -76,4 +82,11 @@ body {
     width: 92%;
     margin: 0 auto;
     //border: 1px solid red;
+}
+
+@media (min-width: 48em) {
+    .container {
+        width: 80%;
+        min-width: 43rem;
+    }
 }

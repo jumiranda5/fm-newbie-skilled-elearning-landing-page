@@ -31,3 +31,45 @@
     margin-bottom: -1.5rem;
 }
 
+
+// Tablet
+
+@media (min-width: 48rem) {
+
+    .hero {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        
+        min-height: 35rem;
+        margin-top: calc(var(--header-height) * -1);
+        padding-top: 0;
+    }
+
+    .container,
+    .hero-img-container {
+        grid-row: 1 / 2;
+        grid-column: 1 / 2;
+    }
+
+    .hero-text-container {
+        margin-top: calc(4.75rem + var(--header-height));
+        width: 60%;
+        max-width: 38ch;
+    }
+
+    .hero-img-container {
+        width: 50%;
+        max-width: 30rem;
+        margin-top: 0;
+        margin-inline-start: auto;
+    }
+
+    .hero-img {
+        width: 180%;
+        max-width: 400%;
+        object-position: -.5rem -1rem;
+        margin-top: -20%;
+    }
+}
+

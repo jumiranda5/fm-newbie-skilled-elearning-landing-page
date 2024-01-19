@@ -1,7 +1,7 @@
 header {
     display: grid;
     align-items: center;
-    height: var(--header-hight);
+    height: var(--header-height);
 }
 
 header .container {
@@ -9,4 +9,10 @@ header .container {
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
+}
+
+// Tablet
+
+@media (min-width: 48em) {
+    
 }

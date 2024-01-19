@@ -8,7 +8,8 @@
 
 .courses-title-container,
 .course-card {
-    padding: 1.75rem 1.75rem 2rem;
+    padding: var(--card-padding);
+    padding-bottom: 2rem;
     border-radius: .625rem;
 }
 
@@ -35,3 +36,57 @@
 .course-description {
     margin: 1rem 0 1.5rem;
 } 
+
+
+// Tablet
+
+@media (min-width: 48em) {
+
+    .courses {
+        --card-padding: 2rem;
+        margin-top: 1.5rem;
+        padding-bottom: 5.375em;
+    }
+
+    .courses .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, auto);
+        gap: 2rem .75rem;
+    }
+
+    .courses-title-container,
+    .courses-list {
+        display: grid;
+        grid-column: 1 / -1;
+        grid-row: 1 / -1;
+        grid-template-columns: subgrid;
+        grid-template-rows: subgrid;
+    }
+
+    .courses-title-container {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    .courses-list li:nth-child(1) {
+        grid-column: 2 / 3;
+    }
+
+    .courses-title-container,
+    .course-card {
+        margin-top: calc(var(--icon-size) / 2);
+        padding-top: calc(var(--card-padding) + calc(var(--icon-size) / 2));
+        padding-inline-end: 1.25rem;
+    }
+
+    .course-card {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .course-card .link-start {
+        margin-top: auto;
+    }
+
+}
