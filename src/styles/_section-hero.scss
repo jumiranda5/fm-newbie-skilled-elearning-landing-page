@@ -34,7 +34,7 @@
 
 // Tablet
 
-@media (min-width: 48rem) {
+@media (min-width: 48em) {
 
     .hero {
         display: grid;
@@ -55,7 +55,7 @@
     .hero-text-container {
         margin-top: calc(4.75rem + var(--header-height));
         width: 60%;
-        max-width: 38ch;
+        max-width: 35ch;
     }
 
     .hero-img-container {
@@ -70,6 +70,36 @@
         max-width: 400%;
         object-position: -.5rem -1rem;
         margin-top: -20%;
+    }
+}
+
+
+// Desktop
+
+@media (min-width: 75em) {
+
+    .hero-text-container {
+        margin-top: calc(9.5rem + var(--header-height));
+        max-width: 40ch;
+    }
+
+    .hero-text {
+        max-width: 34ch;
+        margin: 1.75rem 0 2.5rem;
+    }
+
+    .hero .link-start {
+        line-height: 4rem;
+        padding: 0 2em;
+    }
+
+    .hero-img-container {
+        width: 49%;
+        max-width: 56rem;
+    }
+
+    .hero-img {
+        width: 150%;
     }
 }
 

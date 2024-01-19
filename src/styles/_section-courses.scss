@@ -19,10 +19,11 @@
 }
 
 .course-card {
+    position: relative;
     margin-top: 2.5rem;
     padding-top: calc(var(--card-padding) + calc(var(--icon-size) / 2));
     background-color: var(--clr-white);
-    position: relative;
+    box-shadow: 0 1.5rem 3.25rem rgba(6, 22, 141, 0.0445);
 }
 
 .course-icon {
@@ -88,5 +89,38 @@
     .course-card .link-start {
         margin-top: auto;
     }
+
+}
+
+
+// Desktop
+
+@media (min-width: 75em) {
+
+    .courses {
+        margin-top: 3.5rem;
+        padding-bottom: 9em;
+    }
+
+    .courses .container {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, auto);
+        gap: 3.5rem 1.875rem;
+    }
+
+    .courses-title-container,
+    .course-card {
+        padding-inline-end: var(--card-padding);
+    }
+
+    .course-card {
+        gap: 1.5rem;
+        padding-bottom: 2.5rem;
+    }
+
+    .course-description {
+        margin: 0;
+    } 
+
 
 }

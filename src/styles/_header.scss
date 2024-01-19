@@ -14,5 +14,9 @@ header .container {
 // Tablet
 
 @media (min-width: 48em) {
-    
+    header {
+        // place the header ahead of the hero 
+        position: relative;
+        z-index: 2;
+    }
 }
