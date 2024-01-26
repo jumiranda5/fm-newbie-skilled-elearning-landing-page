@@ -115,22 +115,39 @@ document.getElementById('icon-design').src = icon_design_namespaceObject;
 document.getElementById('icon-photography').src = icon_photography_namespaceObject;
 
 // Hero
-const picture = document.getElementById('hero-img');
-const srcDesk = document.createElement("source");
-const srcTablet = document.createElement("source");
-const srcMobile = document.createElement("source");
+const picture = document.getElementById("hero-img");
+const srcDeskWebp = document.createElement("source");
+const srcDeskPng = document.createElement("source");
+const srcTabletWebp = document.createElement("source");
+const srcTabletPng = document.createElement("source");
+const srcMobileWebp = document.createElement("source");
+const srcMobilePng = document.createElement("source");
 const img = document.createElement("img");
-srcDesk.media = "(min-width: 1200px)";
-srcDesk.srcset = `${assets_images_image_hero_desktop_namespaceObject} 1x, ${image_hero_desktop_namespaceObject} 1x, ${assets_images_image_hero_desktop_2x_namespaceObject} 2x, ${image_hero_desktop_2x_namespaceObject} 2x`;
-srcTablet.media = "(min-width: 768px)";
-srcTablet.srcset = `${assets_images_image_hero_tablet_namespaceObject} 1x, ${image_hero_tablet_namespaceObject} 1x, ${assets_images_image_hero_tablet_2x_namespaceObject} 2x, ${image_hero_tablet_2x_namespaceObject} 2x`;
-srcMobile.srcset = `${assets_images_image_hero_mobile_namespaceObject} 1x, ${image_hero_mobile_namespaceObject} 1x, ${assets_images_image_hero_mobile_2x_namespaceObject} 2x, ${image_hero_mobile_2x_namespaceObject} 2x`;
+srcDeskWebp.media = "(min-width: 1200px)";
+srcDeskWebp.srcset = `${assets_images_image_hero_desktop_namespaceObject} 1x, ${assets_images_image_hero_desktop_2x_namespaceObject} 2x`;
+srcDeskWebp.type = "image/webp";
+srcDeskPng.media = "(min-width: 1200px)";
+srcDeskPng.srcset = `${image_hero_desktop_namespaceObject} 1x, ${image_hero_desktop_2x_namespaceObject} 2x`;
+srcDeskPng.type = "image/png";
+srcTabletWebp.media = "(min-width: 768px)";
+srcTabletWebp.srcset = `${assets_images_image_hero_tablet_namespaceObject} 1x, ${assets_images_image_hero_tablet_2x_namespaceObject} 2x,`;
+srcTabletWebp.type = "image/webp";
+srcTabletPng.media = "(min-width: 768px)";
+srcTabletPng.srcset = `${image_hero_tablet_namespaceObject} 1x, ${image_hero_tablet_2x_namespaceObject} 2x`;
+srcTabletPng.type = "image/png";
+srcMobileWebp.srcset = `${assets_images_image_hero_mobile_namespaceObject} 1x, ${assets_images_image_hero_mobile_2x_namespaceObject} 2x`;
+srcMobileWebp.type = "image/webp";
+srcMobilePng.srcset = `${image_hero_mobile_namespaceObject} 1x, ${image_hero_mobile_2x_namespaceObject} 2x`;
+srcMobilePng.type = "image/png";
 img.src = image_hero_mobile_namespaceObject;
 img.classList.add('hero-img');
 img.alt = "";
-picture.appendChild(srcDesk);
-picture.appendChild(srcTablet);
-picture.appendChild(srcMobile);
+picture.appendChild(srcDeskWebp);
+picture.appendChild(srcDeskPng);
+picture.appendChild(srcTabletWebp);
+picture.appendChild(srcTabletPng);
+picture.appendChild(srcMobileWebp);
+picture.appendChild(srcMobilePng);
 picture.appendChild(img);
 ;// CONCATENATED MODULE: ./src/main.js
 'use-strict';
@@ -139,4 +156,4 @@ picture.appendChild(img);
 
 /******/ })()
 ;
-//# sourceMappingURL=index.bundle-10786404f4c5792ddeb8.js.map
+//# sourceMappingURL=index.bundle-ec8b51395f07897e8343.js.map

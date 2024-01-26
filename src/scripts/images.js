@@ -34,27 +34,47 @@ document.getElementById('icon-design').src = IconDesign;
 document.getElementById('icon-photography').src = IconPhotography;
 
 // Hero
-const picture = document.getElementById('hero-img');
-const srcDesk = document.createElement("source");
-const srcTablet = document.createElement("source");
-const srcMobile = document.createElement("source");
+const picture = document.getElementById("hero-img");
+const srcDeskWebp = document.createElement("source");
+const srcDeskPng = document.createElement("source");
+const srcTabletWebp = document.createElement("source");
+const srcTabletPng = document.createElement("source");
+const srcMobileWebp = document.createElement("source");
+const srcMobilePng = document.createElement("source");
 const img = document.createElement("img");
 
-srcDesk.media = "(min-width: 1200px)";
-srcDesk.srcset = `${HeroDeskWebp} 1x, ${HeroDeskPng} 1x, ${HeroDeskWebp2x} 2x, ${HeroDeskPng2x} 2x`;
+srcDeskWebp.media = "(min-width: 1200px)";
+srcDeskWebp.srcset = `${HeroDeskWebp} 1x, ${HeroDeskWebp2x} 2x`;
+srcDeskWebp.type = "image/webp";
 
-srcTablet.media = "(min-width: 768px)";
-srcTablet.srcset = `${HeroTabletWebp} 1x, ${HeroTabletPng} 1x, ${HeroTabletWebp2x} 2x, ${HeroTabletPng2x} 2x`;
+srcDeskPng.media = "(min-width: 1200px)";
+srcDeskPng.srcset = `${HeroDeskPng} 1x, ${HeroDeskPng2x} 2x`;
+srcDeskPng.type = "image/png";
 
-srcMobile.srcset = `${HeroMobileWebp} 1x, ${HeroMobilePng} 1x, ${HeroMobileWebp2x} 2x, ${HeroMobilePng2x} 2x`;
+srcTabletWebp.media = "(min-width: 768px)";
+srcTabletWebp.srcset = `${HeroTabletWebp} 1x, ${HeroTabletWebp2x} 2x,`;
+srcTabletWebp.type = "image/webp";
+
+srcTabletPng.media = "(min-width: 768px)";
+srcTabletPng.srcset = `${HeroTabletPng} 1x, ${HeroTabletPng2x} 2x`;
+srcTabletPng.type = "image/png";
+
+srcMobileWebp.srcset = `${HeroMobileWebp} 1x, ${HeroMobileWebp2x} 2x`;
+srcMobileWebp.type = "image/webp";
+
+srcMobilePng.srcset = `${HeroMobilePng} 1x, ${HeroMobilePng2x} 2x`;
+srcMobilePng.type = "image/png";
 
 img.src = HeroMobilePng;
 img.classList.add('hero-img');
 img.alt = "";
 
-picture.appendChild(srcDesk);
-picture.appendChild(srcTablet);
-picture.appendChild(srcMobile);
+picture.appendChild(srcDeskWebp);
+picture.appendChild(srcDeskPng);
+picture.appendChild(srcTabletWebp);
+picture.appendChild(srcTabletPng);
+picture.appendChild(srcMobileWebp);
+picture.appendChild(srcMobilePng);
 picture.appendChild(img);
 
 
